@@ -1,0 +1,33 @@
+Proceso Truco
+	definir j1,j2,j3,j4,j5,j6,TotPun como entero;
+	definir premio, MitadPremio,SioSi,pj1,pj2,pj3,pj4,pj5,pj6 como real;
+	Escribir "Ingrese el monto del premio";
+	Leer premio;
+	escribir "ingrese el puntaje del primer jugador";
+	leer j1;
+	escribir "ingrese el puntaje del segundo jugador";
+	leer j2;
+	escribir "ingrese el puntaje del tercer jugador";
+	leer j3;
+	escribir "ingrese el puntaje del cuarto jugador";
+	leer j4;
+	escribir "ingrese el puntaje del quinto jugador";
+	leer j5;
+	escribir "ingrese el puntaje del sexto jugador";
+	leer j6;
+	TotPun=j1+j2+j3+j4+j5+j6;
+	MitadPremio=premio/2;
+	SioSi=MitadPremio/6;
+	Pj1=SioSi+(MitadPremio*(j1/TotPun));
+	Pj2=SioSi+(MitadPremio*(j2/TotPun));
+	Pj3=SioSi+(MitadPremio*(j3/TotPun));
+	Pj4=SioSi+(MitadPremio*(j4/TotPun));
+	Pj5=SioSi+(MitadPremio*(j5/TotPun));
+	Pj6=SioSi+(MitadPremio*(j6/TotPun));
+	Escribir "El primer jugador gano $", Pj1;
+	Escribir "El segundo jugador gano $", Pj2;
+	Escribir "El tercer jugador gano $", Pj3;
+	Escribir "El cuarto jugador gano $", Pj4;
+	Escribir "El quinto jugador gano $", Pj5;
+	Escribir "El sexto jugador gano $", Pj6;
+FinProceso
